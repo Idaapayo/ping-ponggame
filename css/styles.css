@@ -1,0 +1,11 @@
+.ping-pong{
+  background-image: url("/home/buntu/ping-pong/assets/ping2.jpeg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+}
+.play{
+  background-image: url("/home/buntu/ping-pong/assets/image7.jpeg");
+}
