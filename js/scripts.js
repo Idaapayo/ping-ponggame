@@ -1,32 +1,38 @@
 /*back-end-logic*/
 
- function addup(input){
-   var total=[];
-   for (var number = 0; i < number; number++) {
+ function addup(game){
+   for (var number = 0; number < game; number++) {
      if ((number%3===0) && (number%5===0)) {
-       total.push("ping-pong");
+
+       $(".listAp").append("<li>ping-pong</li>")
      }
      else if (number%3===0) {
-       total.push("ping");
+
+       $(".listAp").append("<li>ping</li>")
      }
      else if (number%5===0) {
-      total.push("pong");
+
+      $(".listAp").append("<li>pong</li>")
      }
      else {
-       total.push(number);
+      $(".listAp").append("<li>"+number+"</li>")
+
      }
    }
    return total;
  }
  /*front-end-logic*/
  $(document).ready(function(){
-   $("form").submit(function(event){
-     event.preventDefault();
-     var game = $("#number").val();
+   $("form.fomu").submit(function(event){
+     var game = parseInt($("input#numbe").val());
+     event.preventDefault()
+     console.log(game);
+  addup(game)
+
+
+
      var newnum = parseInt(game);
-     alert(game);
-     var result = addup(newnum)
-     console.log(result);
+     append(result);
    });
 
  });
