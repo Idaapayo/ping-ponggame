@@ -23,12 +23,10 @@
    $("form").submit(function(event){
      event.preventDefault();
      var game = $("#number").val();
-    // var newnum = parseInt(game);
+     var newnum = parseInt(game);
      alert(game);
-    // var result = addup(newnum);
-    // console.log(newnum);
-
-    // console.log(result);
+     var result = addup(newnum)
+     console.log(result);
    });
 
  });
